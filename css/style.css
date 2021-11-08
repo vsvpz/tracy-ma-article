@@ -1,0 +1,238 @@
+/*----------------------------------------------*\
+    STYLES
+	======
+
+\*----------------------------------------------*/
+
+    @font-face {
+  font-family: "Anthony";
+  src: url("../fonts/Anthony.woff2") format("woff2"),
+       url("../fonts/Anthony.woff") format("woff");
+}
+
+  @font-face {
+    font-family: "Cirrus Cumulus";
+    src: url("../fonts/CirrusCumulus.woff") format("woff");
+  }
+
+    img{
+        max-width: 30em;
+        filter: grayscale(1);
+        mix-blend-mode: multiply;
+        transition: filter 0.25s, mix-blend-mode 0.25s;
+    }
+
+    img:hover{
+        filter: none;
+        mix-blend-mode: normal;
+        transition: none;  
+    }
+
+    body{
+        background-color: magenta;
+        margin: 1em;
+        max-width: 100%;
+    }
+
+    h1{
+        font-family: "Anthony";
+        font-size: 8em;   
+        color: black;
+        filter: drop-shadow(3px 3px #24fc03);     
+    }
+
+    h2{
+        font-family: "Cirrus Cumulus";
+        font-size: 2.4em;
+        line-height: 1.25em;
+        text-align: left;
+        top: 8.57em;
+        color: #24fc03; 
+        font-weight: 800;    
+    }
+
+    h3{
+        font-family: "Arial";
+        font-size: 2em;
+        line-height: 1.25em;
+        text-align: left;
+        top: 8.57em;
+        color: black;     
+    }
+
+    h4{
+        font-family: "Arial";
+        font-size: 1.25em;
+        line-height: 1.25em;
+        text-align: left;
+        top: 8.57em;
+        color: black;     
+    }
+
+    h5{
+        font-family: "Arial";
+        font-size: 1em;
+        text-align: left;
+        top: 8.57em;
+        color: #24fc03;     
+    }
+
+    p{
+        font-family: "Arial";
+        color: #24fc03;     
+        font-size: 1.1em;
+        line-height: 1.25em;
+    }
+
+    .interview p{
+        font-style: italic;
+    }
+
+    .title{
+        max-width: 90em;
+    }
+
+    .subtitle{
+        max-width: 65em;
+        position: absolute;
+        left: 36em;
+        top: 26.5em;
+    }
+
+
+    .section-one{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: auto;
+        margin-top: 2em;
+    }
+
+    .section-one p{
+        padding-bottom: 2em;
+    }
+    
+    .section-two{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "text photo photo";
+        margin-top: 2em;
+    }
+
+    .text-two{
+        grid-area: text;
+    }
+
+    .image-three{
+        grid-area: photo;
+        text-align: center;
+    }
+
+    .section-two img{
+        max-width: 90%;
+    }   
+
+    .interview p, h4{
+        color: black;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        max-width: 90%;
+    }
+
+    .section-three{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin-top: 2em;
+    }
+
+    .image-four p, .section-four p, .section-six p{
+        font-family: "Arial";
+        color: #24fc03;     
+        font-size: 1.1em;
+        line-height: 1.25em;
+        font-style: normal;
+        margin-top: 0;
+    }
+
+    .section-four, .section-six{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        margin-top: 1em;
+    }
+
+    .section-four img, .section-six img{
+        max-width: 95%;
+        justify-items: center;
+    }
+
+    .section-five{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin-top: 1em;
+    }
+
+    .section-seven{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "text photo photo";
+        margin-top: 2em;
+    }
+
+    .text-eight{
+        grid-area: text;
+    }
+
+    .image-nine{
+        grid-area: photo;
+        text-align: center;
+    }
+
+    .section-seven img{
+        max-width: 90%;
+    }  
+    
+    
+
+    .section-eight{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "text photo photo";
+        margin-top: 0;
+    }
+
+    .image-ten{
+        grid-area: photo;
+        text-align: center;
+    }
+
+    .text-nine{
+        grid-area: text;
+    }
+
+    .section-eight img{
+        max-width: 90%;
+        margin-top: 2.6em;
+    }   
+
+    .section-seven h4{
+        margin-top: 0;
+    }
+
+    .section-eight h4{
+        margin-top: 0;
+    }
+
+    .credits{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+    }
